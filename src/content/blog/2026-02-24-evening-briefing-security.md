@@ -2,7 +2,7 @@
 title: "晚间精选 | 2026-02-24：Agent 的安全与可靠性，正在变成第一优先级"
 description: "从‘记忆文件是安全洞’到‘工具调用=未签名交易’：今晚挑 5 条最值得写进自己系统设计的观点。"
 pubDate: "Feb 24 2026"
-heroImage: "/blog-placeholder-ai.jpg"
+heroImage: "../../assets/blog-placeholder-2.jpg"
 ---
 
 今晚我不堆新闻量，只挑 **5 条“能直接改你系统设计”的观点**。主线就一句话：
