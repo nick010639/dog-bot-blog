@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogbot Workspace Monitor 🐶</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+        body { font-family: 'JetBrains+Mono', monospace; }
+        .stat-card { transition: transform 0.2s; }
+        .stat-card:hover { transform: translateY(-3px); }
+        .content-section { scrollbar-width: thin; scrollbar-color: #3f3f46 #09090b; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen p-4 md:p-8">
+    <div class="max-w-5xl mx-auto">
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 border-b border-zinc-800 pb-6 gap-4">
+            <div>
+                <h1 class="text-3xl font-bold text-orange-500">Dogbot Intelligence</h1>
+                <p class="text-zinc-500 mt-1 italic text-sm">Sovereign Data Link (via GitHub CDN)</p>
+            </div>
+            <div id="status-indicator" class="px-4 py-1 rounded-full bg-zinc-900 text-zinc-400 text-sm border border-zinc-800">
+                ● Syncing...
+            </div>
+        </header>
+
+        <!-- 核心指标 -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div class="stat-card bg-zinc-900/50 border border-zinc-800 p-4 rounded-xl">
+                <h3 class="text-zinc-500 text-xs uppercase mb-1">Memory Nodes</h3>
+                <p id="memory-count" class="text-2xl font-bold text-orange-400">--</p>
+            </div>
+            <div class="stat-card bg-zinc-900/50 border border-zinc-800 p-4 rounded-xl">
+                <h3 class="text-zinc-500 text-xs uppercase mb-1">Disk Usage</h3>
+                <p id="disk-usage" class="text-2xl font-bold text-orange-400">--</p>
+            </div>
+            <div class="stat-card bg-zinc-900/50 border border-zinc-800 p-4 rounded-xl">
+                <h3 class="text-zinc-500 text-xs uppercase mb-1">Uptime</h3>
+                <p id="uptime" class="text-sm font-bold leading-tight pt-1">--</p>
+            </div>
+            <div class="stat-card bg-zinc-900/50 border border-zinc-800 p-4 rounded-xl">
+                <h3 class="text-zinc-500 text-xs uppercase mb-1">Last Sync</h3>
+                <p id="refresh-time" class="text-[10px] font-mono text-zinc-400 mt-1">--</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- 待办事项 -->
+            <div class="md:col-span-1 bg-zinc-900/30 border border-zinc-800 p-6 rounded-2xl">
+                <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+                    <span class="text-orange-500">📅</span> TODO List
+                </h2>
+                <ul id="todo-list" class="space-y-3 text-sm text-zinc-300">
+                    <!-- Items injected here -->
+                </ul>
+            </div>
+
+            <!-- 今日简报摘要 -->
+            <div class="md:col-span-2 bg-zinc-900/30 border border-zinc-800 p-6 rounded-2xl">
+                <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+                    <span class="text-orange-500">📰</span> Daily Briefing
+                </h2>
+                <div id="briefing-content" class="text-sm text-zinc-400 leading-relaxed whitespace-pre-wrap h-48 overflow-y-auto content-section">
+                    Fetching latest briefing...
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-12 text-center text-zinc-600 text-[10px] uppercase tracking-widest">
+            Experimental Interface | Developed for Zack | Powered by Dogbot 🐶
+        </footer>
+    </div>
+
+    <script>
+        const STATS_URL = 'https://raw.githubusercontent.com/nick010639/dogbot-dashboard-data/main/stats.json';
+
+        async function fetchStats() {
+            try {
+                const res = await fetch(`${STATS_URL}?t=${new Date().getTime()}`);
+                const data = await res.json();
+                
+                document.getElementById('memory-count').innerText = data.memoryCount;
+                document.getElementById('disk-usage').innerText = data.diskUsage;
+                document.getElementById('uptime').innerText = data.uptime;
+                document.getElementById('refresh-time').innerText = data.timestamp;
+                
+                // Briefing
+                document.getElementById('briefing-content').innerText = data.briefing || "暂无简报内容";
+                
+                // Todos
+                const todoList = document.getElementById('todo-list');
+                todoList.innerHTML = '';
+                if (data.todos && data.todos.length > 0) {
+                    data.todos.forEach(item => {
+                        const li = document.createElement('li');
+                        li.className = 'border-l-2 border-orange-500/30 pl-3 py-1';
+                        li.innerText = item;
+                        todoList.appendChild(li);
+                    });
+                } else {
+                    todoList.innerHTML = '<li class="text-zinc-600 italic">No active tasks</li>';
+                }
+                
+                const indicator = document.getElementById('status-indicator');
+                indicator.innerText = '● Live Data (CDN)';
+                indicator.className = 'px-4 py-1 rounded-full bg-green-900/30 text-green-500 text-xs border border-green-500/50';
+            } catch (e) {
+                console.error('Failed to fetch stats', e);
+                const indicator = document.getElementById('status-indicator');
+                indicator.innerText = '● Syncing Error';
+                indicator.className = 'px-4 py-1 rounded-full bg-red-900/30 text-red-500 text-xs border border-red-500/50';
+            }
+        }
+
+        fetchStats();
+        setInterval(fetchStats, 60000);
+    </script>
+</body>
+</html>
