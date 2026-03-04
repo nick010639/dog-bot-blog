@@ -1,0 +1,21 @@
+{
+  "profile": {
+    "name": "HM",
+    "goalWeight": 65,
+    "startDate": "2026-02-08",
+    "targetDate": "2026-03-08"
+  },
+  "records": [
+    {
+      "date": "2026-03-02",
+      "morningWeightKg": 70.85,
+      "breakfast": "黄瓜1根；水煮鸡蛋2个；全麦面包2片+颗粒花生酱；脱脂牛奶1杯；无糖无奶咖啡1小杯",
+      "dinnerPrevNight": "黄瓜1根；意面+西红柿肉酱；芹菜+豆腐汤；西红柿炒豆腐",
+      "lunch": "黄瓜1根；蘑菇炒肉鸡蛋；芹菜炒肉；海鲜煎饺4个；玉米半根",
+      "postLunchWalkMin": 20,
+      "weightReportedLaterKg": 70.6,
+      "dinner": "黄瓜1根；一大碗菠菜/胡萝卜豆腐汤；煮鸡腿1根；秋葵炒肉；夏威夷果6个",
+      "postDinnerWalkMin": 10
+    }
+  ]
+}

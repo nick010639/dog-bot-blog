@@ -1,0 +1,42 @@
+# MEMORY.md - Personal Life
+
+## Health & Habits
+- Weight Goal: 72.7kg -> 65kg (Target Date: 2026-03-08)
+- **2026-02-08**: 72.7kg. 
+  - Breakfast: Lettuce, celery, carrots, egg, soy milk, small fruit.
+  - Lunch: Lettuce, cucumber, celery, cabbage tofu, 6 boiled shrimp, fist-sized job's tears grain rice, 2 strawberries.
+  - Dinner: 15 cherry tomatoes.
+- **2026-02-09**: 72.3kg.
+  - Breakfast: 1 cucumber, 3 egg whites, 1 egg yolk, sugar-free soy milk, espresso, small piece whole wheat bread.
+  - Lunch: Green veggies stir-fried with lean meat, cauliflower with lean meat, braised fish, fist-sized job's tears rice, sugar-free soy milk, small piece of apple.
+  - Dinner: Shrimp, tofu, and napa cabbage soup, small piece of whole wheat bread.
+- **2026-02-10**: 72.05kg.
+  - Breakfast: 1 cucumber, 2 eggs, sugar-free soy milk, black coffee, 50g whole wheat bread.
+  - Lunch: Lettuce, red cabbage, 2 steamed shrimp, steamed fish, 1 steamed scallop w/ vermicelli, 1 small piece sweet chicken, steamed okra, baby bok choy, 2 potstickers.
+  - Dinner: Boiled celery, 1 boiled egg, 12 sunflower seeds.
+- **2026-02-11**: 72.05kg (stable).
+  - Breakfast: 1 tomato, 1 boiled egg, sugar-free soy milk, sugar-free milk-free coffee.
+- **2026-02-12**: 71.65kg.
+  - Breakfast: 1 cucumber, 1 cup sugar-free soy milk, 1 boiled egg.
+- **2026-02-23**: 71.85kg.
+  - Breakfast: 1 cucumber, 2 boiled eggs, 1 cup skim milk, 1 cup black coffee, 1 thick slice whole wheat bread.
+  - Lunch: 1 cucumber, 2 lettuce leaves, small portion of mixed noodles (handmade + pasta) with sauce (tomato, lean meat, shrimp, wood ear mushroom), boiled soybeans.
+  - Activity: 20-minute walk after lunch.
+  - Snack: 6 large almonds.
+  - Hydration: 1L warm water in the afternoon.
+- **2026-02-24**: 71.55kg.
+  - Breakfast: 1 cucumber, 2 egg whites + 1 egg yolk, 1 thick slice whole wheat bread, 1 cup skim milk, black coffee (no sugar/no milk).
+  - Lunch: 1 cucumber, 1 piece tomato, stir-fried green pepper + potato, wood ear + cucumber + meat stir-fry, 3 slices pickled cabbage fish, job's tears grain rice (portion not noted), 2 small pieces apple, 1 small piece banana.
+- **2026-02-25**: 71.95kg.
+  - Breakfast: 1 cucumber, 2 eggs, 1 cup sugar-free soy milk, 1 cup black coffee (no sugar/milk), 1 slice whole wheat bread.
+  - Lunch: 1 cucumber, tomato & egg soup, stir-fried zucchini with meat, stir-fried cabbage with vermicelli, pan-fried chicken breast, pasta.
+  - Dinner: Boiled celery, tofu, small portion of shrimp.
+  - Weight slightly up (0.4kg) from yesterday. Keep it up! 🐱
+- **2026-02-28**: 70.55kg (morning weight).
+  - Breakfast: 1 cucumber, 2 boiled eggs, 1 cup sugar-free soy milk, black coffee (no sugar/no milk), 1 slice whole wheat bread.
+  - Lunch: 1 cucumber, vegetable salad, steak, kale juice, penne pasta, small piece of pizza, small piece of tiramisu.
+  - Dinner: chicken soup with celery + tofu; napa cabbage stir-fry with dried tofu slices; 1 slice whole wheat bread.
+- **2026-03-01**: 70.55kg (morning weight).
+  - Breakfast: 1 cucumber, 2 boiled eggs, 1 cup sugar-free soy milk, 1 slice sugar-free whole wheat bread, a little black coffee (no sugar/no milk).
+  - Lunch: 1 cucumber, 2 lettuce leaves, 6 shrimp + scallop(?) chive egg boiled dumplings, 3 steamed dumplings (napa cabbage + pork).
+
